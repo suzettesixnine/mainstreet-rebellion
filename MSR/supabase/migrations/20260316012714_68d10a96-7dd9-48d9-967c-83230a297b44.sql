@@ -1,0 +1,1 @@
+ALTER TABLE public.neighborhood_suggestions ADD COLUMN category text DEFAULT NULL;

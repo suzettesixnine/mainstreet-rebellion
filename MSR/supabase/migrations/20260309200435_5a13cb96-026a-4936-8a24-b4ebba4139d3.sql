@@ -1,0 +1,1 @@
+DROP POLICY "Authenticated users can download digital files" ON storage.objects;
