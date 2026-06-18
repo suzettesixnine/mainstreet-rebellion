@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white border border-gray-100 rounded-2xl;
+  }
+  .card-header {
+    @apply px-5 py-4 border-b border-gray-100 flex items-center justify-between;
+  }
+  .card-title {
+    @apply text-xs font-semibold uppercase tracking-wider text-gray-400;
+  }
+  .card-body {
+    @apply px-5 py-4;
+  }
+  .btn {
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-gray-200 text-sm text-gray-700 hover:bg-gray-50 transition-colors cursor-pointer font-medium;
+  }
+  .btn-primary {
+    @apply bg-hh-green text-white border-hh-green hover:bg-hh-green-md;
+  }
+  .btn-sm {
+    @apply text-xs px-2.5 py-1;
+  }
+  .badge {
+    @apply text-xs px-2 py-0.5 rounded-full font-medium;
+  }
+  .badge-green  { @apply bg-hh-green-lt text-hh-green-dk; }
+  .badge-amber  { @apply bg-hh-amber-lt text-hh-amber-dk; }
+  .badge-blue   { @apply bg-hh-blue-lt  text-hh-blue-dk;  }
+  .badge-pink   { @apply bg-hh-pink-lt  text-hh-pink-dk;  }
+  .badge-gray   { @apply bg-gray-100    text-gray-500;     }
+  .nav-item {
+    @apply flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-800 cursor-pointer transition-colors;
+  }
+  .nav-item.active {
+    @apply bg-hh-green text-white hover:bg-hh-green-md hover:text-white;
+  }
+  .input {
+    @apply w-full px-3 py-2 rounded-lg border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-hh-green focus:border-transparent;
+  }
+  .textarea {
+    @apply w-full px-3 py-2 rounded-lg border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-hh-green focus:border-transparent resize-none;
+  }
+  .select {
+    @apply w-full px-3 py-2 rounded-lg border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-hh-green focus:border-transparent bg-white;
+  }
+}
